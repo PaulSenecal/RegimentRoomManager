@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/images/regimentLogo">
+        <file>images/regimentLogo/rchLogo.png</file>
+    </qresource>
+    <qresource prefix="/Images/Squadrons">
+        <file>images/squadron/1_RCH_1_ESC.png</file>
+        <file>images/squadron/1_RCH_2_ESC.png</file>
+        <file>images/squadron/1_RCH_3_ESC.png</file>
+        <file>images/squadron/1_RCH_4_ESC.png</file>
+        <file>images/squadron/1_RCH_5_ESC_reserve.png</file>
+        <file>images/squadron/1_RCH_ECL.png</file>
+        <file>images/squadron/6esc.jpg</file>
+        <file>images/squadron/ecl.jpg</file>
+    </qresource>
+    <qresource prefix="/images/backgound">
+        <file>images/BackLogin.png</file>
+        <file>images/BackLoginNoPixel.png</file>
+    </qresource>
+    <qresource prefix="/images/login">
+        <file>images/bar.png</file>
+        <file>images/loginImg.png</file>
+        <file>images/mdpImg.png</file>
+    </qresource>
+</RCC>
