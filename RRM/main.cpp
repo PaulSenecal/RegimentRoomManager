@@ -1,5 +1,5 @@
 #include "mainwindow.h"
-#include "loadingpage.h"
+#include "loadingPage/loadingpage.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])

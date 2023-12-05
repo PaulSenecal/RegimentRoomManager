@@ -9,16 +9,16 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    loadingpage.cpp \
+    loadingPage/loadingpage.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
-    loadingpage.h \
+    loadingPage/loadingpage.h \
     mainwindow.h
 
 FORMS += \
-    loadingpage.ui \
+    loadingPage/loadingpage.ui \
     mainwindow.ui
 
 # Default rules for deployment.
