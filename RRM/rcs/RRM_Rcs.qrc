@@ -15,6 +15,7 @@
     <qresource prefix="/images/backgound">
         <file>images/BackLogin.png</file>
         <file>images/BackLoginNoPixel.png</file>
+        <file>images/BackLoginNoPixel 1920.png</file>
     </qresource>
     <qresource prefix="/images/login">
         <file>images/bar.png</file>
