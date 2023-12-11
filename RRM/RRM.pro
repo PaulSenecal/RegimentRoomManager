@@ -10,15 +10,18 @@ CONFIG += c++17
 
 SOURCES += \
     loadingPage/loadingpage.cpp \
+    loginPage/loginpage.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     loadingPage/loadingpage.h \
+    loginPage/loginpage.h \
     mainwindow.h
 
 FORMS += \
     loadingPage/loadingpage.ui \
+    loginPage/loginpage.ui \
     mainwindow.ui
 
 # Default rules for deployment.
