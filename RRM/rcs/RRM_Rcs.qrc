@@ -9,8 +9,8 @@
         <file>images/squadron/1_RCH_4_ESC.png</file>
         <file>images/squadron/1_RCH_5_ESC_reserve.png</file>
         <file>images/squadron/1_RCH_ECL.png</file>
-        <file>images/squadron/6esc.jpg</file>
         <file>images/squadron/ecl.jpg</file>
+        <file>images/squadron/6esc.png</file>
     </qresource>
     <qresource prefix="/images/backgound">
         <file>images/BackLogin.png</file>
