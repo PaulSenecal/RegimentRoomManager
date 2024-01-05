@@ -5,6 +5,7 @@
 #include <QProgressBar>
 #include <QLabel>
 
+
 namespace Ui {
 class LoadingPage;
 }
@@ -18,6 +19,7 @@ public:
     ~LoadingPage();
     void setBarValue(int);
     int getBarValue();
+
 
 private:
     Ui::LoadingPage *ui;

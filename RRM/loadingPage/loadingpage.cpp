@@ -47,3 +47,5 @@ int LoadingPage::getBarValue()
 {
     return this->barValue;
 }
+
+
