@@ -52,9 +52,8 @@ void loginPage::requestLogin(QSqlDatabase a)
                 MainLoadingPage->setWindowTitle(pseudo);
                 this->~loginPage();
             }
-            else{
-                qDebug() << "formulaire incorrect";
-
+            else
+            {
                 ui->ConnectionButton->setText("Connexion");
                 ui->ConnectionButton->setEnabled(true);
             }
@@ -67,11 +66,7 @@ void loginPage::requestLogin(QSqlDatabase a)
 }
 void loginPage::on_ConnectionButton_clicked()
 {
-    QString log = ui->authLineEdit->text();
-    QString password = ui->passWordLineEdit->text();
     connectionDataBase();
     requestLogin(connectionDataBase());
-    qDebug() << log + password;
-
 }
 

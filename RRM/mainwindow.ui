@@ -6,17 +6,267 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1920</width>
+    <height>1080</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="bat04GroupBox">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>160</y>
+      <width>211</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 28px;
+border-color: black;</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>161</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: transparent;
+border: transparent;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="rcs/RRM_Rcs.qrc">
+       <normaloff>:/Images/Squadrons/images/squadron/1_RCH_1_ESC.png</normaloff>:/Images/Squadrons/images/squadron/1_RCH_1_ESC.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>134</width>
+       <height>180</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>320</y>
+       <width>191</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: transparent;
+border: transparent;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="rcs/RRM_Rcs.qrc">
+       <normaloff>:/Images/Squadrons/images/squadron/1_RCH_4_ESC.png</normaloff>:/Images/Squadrons/images/squadron/1_RCH_4_ESC.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>180</width>
+       <height>146</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="bat02GroupBox">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>150</y>
+      <width>221</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 28px;
+border-color: black;</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>201</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: transparent;
+border: transparent;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="rcs/RRM_Rcs.qrc">
+       <normaloff>:/Images/Squadrons/images/squadron/1_RCH_2_ESC.png</normaloff>:/Images/Squadrons/images/squadron/1_RCH_2_ESC.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>179</width>
+       <height>180</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>300</y>
+       <width>181</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: transparent;
+border: transparent;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="rcs/RRM_Rcs.qrc">
+       <normaloff>:/Images/Squadrons/images/squadron/1_RCH_3_ESC.png</normaloff>:/Images/Squadrons/images/squadron/1_RCH_3_ESC.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>180</width>
+       <height>180</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="bat03GroupBox">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>800</y>
+      <width>550</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 28px;
+border-color: black;</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>10</y>
+       <width>181</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: transparent;
+border: transparent;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="rcs/RRM_Rcs.qrc">
+       <normaloff>:/Images/Squadrons/images/squadron/6esc.png</normaloff>:/Images/Squadrons/images/squadron/6esc.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>180</width>
+       <height>180</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>10</y>
+       <width>161</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: transparent;
+border: transparent;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="rcs/RRM_Rcs.qrc">
+       <normaloff>:/Images/Squadrons/images/squadron/1_RCH_ECL.png</normaloff>:/Images/Squadrons/images/squadron/1_RCH_ECL.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>115</width>
+       <height>180</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>30</y>
+      <width>421</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>SELECTIONNEZ  UN ESCADRON</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="rcs/RRM_Rcs.qrc"/>
+ </resources>
  <connections/>
 </ui>

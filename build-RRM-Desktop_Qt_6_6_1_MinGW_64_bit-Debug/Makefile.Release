@@ -116,13 +116,13 @@ compiler_rcc_clean:
 	-$(DEL_FILE) release\qrc_RRM_Rcs.cpp
 release/qrc_RRM_Rcs.cpp: ../RRM/rcs/RRM_Rcs.qrc \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/bin/rcc.exe \
+		../RRM/rcs/images/squadron/6esc.png \
 		../RRM/rcs/images/squadron/ecl.jpg \
 		../RRM/rcs/images/squadron/1_RCH_1_ESC.png \
 		../RRM/rcs/images/squadron/1_RCH_4_ESC.png \
 		../RRM/rcs/images/squadron/1_RCH_2_ESC.png \
 		../RRM/rcs/images/squadron/1_RCH_3_ESC.png \
 		../RRM/rcs/images/squadron/1_RCH_ECL.png \
-		../RRM/rcs/images/squadron/6esc.jpg \
 		../RRM/rcs/images/squadron/1_RCH_5_ESC_reserve.png \
 		../RRM/rcs/images/regimentLogo/rchLogo.png \
 		../RRM/rcs/images/loginImg.png \
@@ -479,6 +479,22 @@ release/moc_loginpage.cpp: ../RRM/loginPage/loginpage.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/QSizeF \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/QTransform \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qnativeinterface.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/QSqlDatabase \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qsqldatabase.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qtsqlglobal.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qtsql-config.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qtsqlexports.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/QSqlQuery \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qsqlquery.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/QString \
+		../RRM/loadingPage/loadingpage.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QProgressBar \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qprogressbar.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QLabel \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qpicture.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qtextdocument.h \
 		release/moc_predefs.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/bin/moc.exe
 	C:\DOWNLOAD\ProgrammingSoftware\QT\6.6.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Programmation/Efrei/Diplome/RegimentRoomManager/build-RRM-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/mkspecs/win32-g++ -IC:/Programmation/Efrei/Diplome/RegimentRoomManager/RRM -IC:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include -IC:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets -IC:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui -IC:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql -IC:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore -I. -IC:/DOWNLOAD/ProgrammingSoftware/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/DOWNLOAD/ProgrammingSoftware/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/DOWNLOAD/ProgrammingSoftware/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/DOWNLOAD/ProgrammingSoftware/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/DOWNLOAD/ProgrammingSoftware/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/DOWNLOAD/ProgrammingSoftware/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\RRM\loginPage\loginpage.h -o release\moc_loginpage.cpp
@@ -1042,6 +1058,22 @@ release/loginpage.o: ../RRM/loginPage/loginpage.cpp ../RRM/loginPage/loginpage.h
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/QSizeF \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/QTransform \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qnativeinterface.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/QSqlDatabase \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qsqldatabase.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qtsqlglobal.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qtsql-config.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qtsqlexports.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/QSqlQuery \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qsqlquery.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/QString \
+		../RRM/loadingPage/loadingpage.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QProgressBar \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qprogressbar.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QLabel \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qpicture.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qtextdocument.h \
 		ui_loginpage.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/QVariant \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QApplication \
@@ -1068,11 +1100,6 @@ release/loginpage.o: ../RRM/loginPage/loginpage.cpp ../RRM/loginPage/loginpage.h
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QGroupBox \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qgroupbox.h \
-		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qframe.h \
-		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QLabel \
-		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qlabel.h \
-		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qpicture.h \
-		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qtextdocument.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QLineEdit \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qlineedit.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qtextcursor.h \
@@ -1259,6 +1286,14 @@ release/main.o: ../RRM/main.cpp ../RRM/mainwindow.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qpicture.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qtextdocument.h \
 		../RRM/loginPage/loginpage.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/QSqlDatabase \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qsqldatabase.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qtsqlglobal.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qtsql-config.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qtsqlexports.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/QSqlQuery \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qsqlquery.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/QString \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QApplication \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qapplication.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qcoreapplication.h \
