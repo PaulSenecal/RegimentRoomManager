@@ -32,7 +32,7 @@
     <pixmap resource="../rcs/RRM_Rcs.qrc">:/images/backgound/images/BackLoginNoPixel 1920.png</pixmap>
    </property>
   </widget>
-  <widget class="QGroupBox" name="groupBox">
+  <widget class="QGroupBox" name="inputConnectionGroupBox">
    <property name="geometry">
     <rect>
      <x>700</x>
@@ -51,7 +51,7 @@ border-color: black;</string>
    <property name="title">
     <string/>
    </property>
-   <widget class="QLabel" name="mdpImage">
+   <widget class="QLabel" name="passWordImageLabel">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -71,7 +71,7 @@ border: transparent;</string>
      <pixmap resource="../rcs/RRM_Rcs.qrc">:/images/login/images/mdpImg.png</pixmap>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="authImageLabel">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -91,7 +91,7 @@ border: transparent;</string>
      <pixmap resource="../rcs/RRM_Rcs.qrc">:/images/login/images/loginImg.png</pixmap>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="passwordkBlackLineLabel">
     <property name="geometry">
      <rect>
       <x>190</x>
@@ -111,7 +111,7 @@ border: transparent;</string>
      <pixmap resource="../rcs/RRM_Rcs.qrc">:/images/login/images/bar.png</pixmap>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="authbalckLineAuthLabel">
     <property name="geometry">
      <rect>
       <x>190</x>
@@ -131,7 +131,7 @@ border: transparent;</string>
      <pixmap resource="../rcs/RRM_Rcs.qrc">:/images/login/images/bar.png</pixmap>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="passWordLineEdit">
     <property name="geometry">
      <rect>
       <x>190</x>
@@ -159,13 +159,13 @@ border: transparent;</string>
      <enum>QLineEdit::Password</enum>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="authLineEdit">
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>50</y>
+      <y>40</y>
       <width>261</width>
-      <height>21</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -179,11 +179,11 @@ background: transparent;
 border: transparent;</string>
     </property>
     <property name="text">
-     <string>Semaine.ECL</string>
+     <string>ecl.semaineh</string>
     </property>
    </widget>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="ConnectionButton">
    <property name="geometry">
     <rect>
      <x>880</x>
