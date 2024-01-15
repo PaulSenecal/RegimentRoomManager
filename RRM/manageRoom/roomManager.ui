@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>roomManager</class>
+ <widget class="QWidget" name="roomManager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="floorVariableLabel">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>160</y>
+     <width>81</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Floor Variable</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="floorGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>110</y>
+     <width>371</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="floor1ImageLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>370</y>
+      <width>241</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../rcs/RRM_Rcs.qrc">:/Floors/images/floors/floor.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="floor2Imagelabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>320</y>
+      <width>241</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../rcs/RRM_Rcs.qrc">:/Floors/images/floors/floor.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="floor4ImageLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>40</y>
+      <width>241</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../rcs/RRM_Rcs.qrc">:/Floors/images/floors/floor.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="floor3ImageLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>220</y>
+      <width>241</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../rcs/RRM_Rcs.qrc">:/Floors/images/floors/floor.png</pixmap>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="nameVariableLabel">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>10</y>
+     <width>241</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Name Building Variable</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../rcs/RRM_Rcs.qrc"/>
+ </resources>
+ <connections/>
+</ui>

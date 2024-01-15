@@ -113,15 +113,15 @@ public:
 
     void retranslateUi(QWidget *loginPage)
     {
-        loginPage->setWindowTitle(QCoreApplication::translate("loginPage", "Form", nullptr));
+        loginPage->setWindowTitle(QCoreApplication::translate("loginPage", "Formulaire de Connection", nullptr));
         label->setText(QString());
         inputConnectionGroupBox->setTitle(QString());
         passWordImageLabel->setText(QString());
         authImageLabel->setText(QString());
         passwordkBlackLineLabel->setText(QString());
         authbalckLineAuthLabel->setText(QString());
-        passWordLineEdit->setText(QCoreApplication::translate("loginPage", "test", nullptr));
-        authLineEdit->setText(QCoreApplication::translate("loginPage", "ecl.semaineh", nullptr));
+        passWordLineEdit->setText(QCoreApplication::translate("loginPage", "123456789", nullptr));
+        authLineEdit->setText(QCoreApplication::translate("loginPage", "ecl.semaine", nullptr));
         ConnectionButton->setText(QCoreApplication::translate("loginPage", "PushButton", nullptr));
     } // retranslateUi
 

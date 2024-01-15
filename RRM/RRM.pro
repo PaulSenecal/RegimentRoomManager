@@ -12,17 +12,20 @@ SOURCES += \
     loadingPage/loadingpage.cpp \
     loginPage/loginpage.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    manageRoom/roomManager.cpp
 
 HEADERS += \
     loadingPage/loadingpage.h \
     loginPage/loginpage.h \
-    mainwindow.h
+    mainwindow.h \
+    manageRoom/roomManager.h
 
 FORMS += \
     loadingPage/loadingpage.ui \
     loginPage/loginpage.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    manageRoom/roomManager.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
