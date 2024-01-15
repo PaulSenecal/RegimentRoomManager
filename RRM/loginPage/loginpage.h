@@ -6,6 +6,8 @@
 #include <QSqlQuery>
 #include <QString>
 #include "loadingPage/loadingpage.h"
+#include "mainwindow.h"
+#include <QMessageBox>
 
 namespace Ui {
 class loginPage;
@@ -22,14 +24,16 @@ public:
 
     QSqlDatabase connectionDataBase();
     void requestLogin(QSqlDatabase);
-    //jai ajouter des fonctions requete mais pas encore push ni completer les fonction
 
 private slots:
     void on_ConnectionButton_clicked();
 
 private:
     Ui::loginPage *ui;
-    LoadingPage * MainLoadingPage;
+    LoadingPage * MainLoadingPage;//uniquement pour test
+    MainWindow * SelectionMainWindows;
+protected:
+    QString squadronChoice;
 };
 
 #endif // LOGINPAGE_H

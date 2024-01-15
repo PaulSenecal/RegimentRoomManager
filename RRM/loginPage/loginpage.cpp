@@ -23,7 +23,7 @@ QSqlDatabase loginPage::connectionDataBase()
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("C:/Programmation/Efrei/Diplome/RegimentRoomManager/RRM/DBSave/mydatabase.db");
     if (!db.open()) {
-        qDebug() << "Impossible d'ouvrir la base de données";
+        QMessageBox::information(this, "Erreur de connection", "impossible de se connecter a la base de donnée , Veuillez contacter votre administrateur system");
 
     }
     return db;
@@ -46,22 +46,29 @@ void loginPage::requestLogin(QSqlDatabase a)
             savedPassword = query.value(0).toString();
 
             if(savedPassword == password){
-                MainLoadingPage = new LoadingPage;
-                MainLoadingPage->show();
+                this->squadronChoice=pseudo;
+                SelectionMainWindows = new MainWindow;
+                SelectionMainWindows->show();
                 this->close();
-                MainLoadingPage->setWindowTitle(pseudo);
+                SelectionMainWindows->setWindowTitle(pseudo);
                 this->~loginPage();
             }
             else
             {
+                QMessageBox::information(this, "Erreur", "Pseudo/Mots de passe inccorect");
                 ui->ConnectionButton->setText("Connexion");
                 ui->ConnectionButton->setEnabled(true);
             }
         }
+        else{
+            QMessageBox::information(this, "Erreur", "Pseudo/Mots de passe inccorect");
+            ui->ConnectionButton->setText("Connexion");
+            ui->ConnectionButton->setEnabled(true);
+        }
     }
     else
     {
-        qDebug() << "erreur de connexion a la DB";
+        QMessageBox::information(this, "Erreur de connection", "impossible de se connecter a la base de donnée , Veuillez contacter votre administrateur system");
     }
 }
 void loginPage::on_ConnectionButton_clicked()
@@ -69,4 +76,3 @@ void loginPage::on_ConnectionButton_clicked()
     connectionDataBase();
     requestLogin(connectionDataBase());
 }
-

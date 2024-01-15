@@ -22,4 +22,7 @@
         <file>images/loginImg.png</file>
         <file>images/mdpImg.png</file>
     </qresource>
+    <qresource prefix="/Floors">
+        <file>images/floors/floor.png</file>
+    </qresource>
 </RCC>

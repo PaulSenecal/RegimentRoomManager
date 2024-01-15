@@ -36,6 +36,7 @@ public:
     QPushButton *pushButton_6;
     QPushButton *pushButton_5;
     QLabel *label;
+    QLabel *label_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -123,15 +124,18 @@ public:
         pushButton_5->setIconSize(QSize(115, 180));
         label = new QLabel(centralwidget);
         label->setObjectName("label");
-        label->setGeometry(QRect(750, 30, 421, 71));
+        label->setGeometry(QRect(720, 30, 421, 71));
         QFont font;
         font.setPointSize(20);
         font.setBold(true);
         label->setFont(font);
+        label_2 = new QLabel(centralwidget);
+        label_2->setObjectName("label_2");
+        label_2->setGeometry(QRect(760, 200, 251, 131));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 1920, 25));
+        menubar->setGeometry(QRect(0, 0, 1920, 21));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
@@ -155,6 +159,7 @@ public:
         pushButton_6->setText(QString());
         pushButton_5->setText(QString());
         label->setText(QCoreApplication::translate("MainWindow", "SELECTIONNEZ  UN ESCADRON", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
     } // retranslateUi
 
 };
