@@ -137,7 +137,13 @@ release/qrc_RRM_Rcs.cpp: ../RRM/rcs/RRM_Rcs.qrc \
 		../RRM/rcs/images/BackLoginNoPixel\ 1920.png \
 		../RRM/rcs/images/BackLogin.png \
 		../RRM/rcs/images/BackLoginNoPixel.png \
-		../RRM/rcs/images/floors/floor.png
+		../RRM/rcs/images/floors/floor.png \
+		../RRM/rcs/images/cross.png \
+		../RRM/rcs/images/see.png \
+		../RRM/rcs/images/Status/red.png \
+		../RRM/rcs/images/Status/green.png \
+		../RRM/rcs/images/Status/violet.png \
+		../RRM/rcs/images/Status/orange.png
 	C:\DOWNLOAD\ProgrammingSoftware\QT\6.6.1\mingw_64\bin\rcc.exe -name RRM_Rcs --no-zstd ..\RRM\rcs\RRM_Rcs.qrc -o release\qrc_RRM_Rcs.cpp
 
 compiler_moc_predefs_make_all: release/moc_predefs.h
@@ -1308,9 +1314,9 @@ release/loginpage.o: ../RRM/loginPage/loginpage.cpp ../RRM/loginPage/loginpage.h
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\loginpage.o ..\RRM\loginPage\loginpage.cpp
 
-release/main.o: ../RRM/main.cpp ../RRM/mainwindow.h \
-		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QMainWindow \
-		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qmainwindow.h \
+release/main.o: ../RRM/main.cpp ../RRM/loginPage/loginpage.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QWidget \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qwidget.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qtguiglobal.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qglobal.h \
@@ -1360,7 +1366,6 @@ release/main.o: ../RRM/main.cpp ../RRM/mainwindow.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qtguiexports.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
-		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qwidget.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qwindowdefs.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qobjectdefs.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qnamespace.h \
@@ -1472,10 +1477,14 @@ release/main.o: ../RRM/main.cpp ../RRM/mainwindow.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/QSizeF \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/QTransform \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qnativeinterface.h \
-		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/QSqlDatabase \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qsqldatabase.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qtsqlglobal.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qtsql-config.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qtsqlexports.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/QSqlQuery \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qsqlquery.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/QString \
-		../RRM/manageRoom/roomManager.h \
-		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QWidget \
 		../RRM/loadingPage/loadingpage.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QProgressBar \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qprogressbar.h \
@@ -1484,14 +1493,11 @@ release/main.o: ../RRM/main.cpp ../RRM/mainwindow.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qlabel.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qpicture.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qtextdocument.h \
-		../RRM/loginPage/loginpage.h \
-		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/QSqlDatabase \
-		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qsqldatabase.h \
-		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qtsqlglobal.h \
-		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qtsql-config.h \
-		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qtsqlexports.h \
-		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/QSqlQuery \
-		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtSql/qsqlquery.h \
+		../RRM/mainwindow.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QMainWindow \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qmainwindow.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qtabwidget.h \
+		../RRM/manageRoom/roomManager.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QMessageBox \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qdialog.h \
@@ -1892,7 +1898,37 @@ release/roomManager.o: ../RRM/manageRoom/roomManager.cpp ../RRM/manageRoom/roomM
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/QSizeF \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/QTransform \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qnativeinterface.h \
-		ui_roomManager.h
+		ui_roomManager.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/QVariant \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QApplication \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qeventloop.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qfuture.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qmutex.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qtsan_impl.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qresultstore.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qthreadpool.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qthread.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qrunnable.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qexception.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qpromise.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qguiapplication.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qinputmethod.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qlocale.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QGroupBox \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QLabel \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qpicture.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qtextdocument.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\roomManager.o ..\RRM\manageRoom\roomManager.cpp
 
 release/qrc_RRM_Rcs.o: release/qrc_RRM_Rcs.cpp 

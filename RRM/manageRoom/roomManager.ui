@@ -13,14 +13,27 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #D9D9D9;
+color:black;</string>
+  </property>
   <widget class="QLabel" name="floorVariableLabel">
    <property name="geometry">
     <rect>
-     <x>70</x>
+     <x>50</x>
      <y>160</y>
-     <width>81</width>
+     <width>121</width>
      <height>71</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;</string>
    </property>
    <property name="text">
     <string>Floor Variable</string>
@@ -34,6 +47,9 @@
      <width>371</width>
      <height>531</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;</string>
    </property>
    <property name="title">
     <string/>
@@ -106,15 +122,339 @@
   <widget class="QLabel" name="nameVariableLabel">
    <property name="geometry">
     <rect>
-     <x>690</x>
+     <x>750</x>
      <y>10</y>
-     <width>241</width>
+     <width>311</width>
      <height>71</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;</string>
    </property>
    <property name="text">
     <string>Name Building Variable</string>
    </property>
+  </widget>
+  <widget class="QGroupBox" name="roomDetailGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>1400</x>
+     <y>110</y>
+     <width>291</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-style: outset;
+background: transparent;
+border-width: 2px;
+border-radius: 28px;
+border-color: black;</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="roomNumberLabel">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>40</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;
+border: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Chambre</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="roomNumberLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>241</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;
+background: transparent;
+border-width: 2px;
+border-radius: 20px;
+border-color: black;</string>
+    </property>
+    <property name="text">
+     <string>Historique Occupant</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="roomNumberLabel_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>160</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;
+background: transparent;
+border-width: 2px;
+border-radius: 20px;
+border-color: black;</string>
+    </property>
+    <property name="text">
+     <string>Ajouter un Occupante</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="roomNumberLabel_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;
+background: transparent;
+border-width: 2px;
+border-radius: 20px;
+border-color: black;</string>
+    </property>
+    <property name="text">
+     <string>Ajouter un Probleme</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>82</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../rcs/RRM_Rcs.qrc">:/Status/images/see.png</pixmap>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="problemDetailGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>700</y>
+     <width>1131</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-style: outset;
+background: transparent;
+border-width: 2px;
+border-radius: 28px;
+border-color: black;</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="statusGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>1390</x>
+     <y>730</y>
+     <width>271</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+border: transparent;</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="problemLabel">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>130</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Non Attribuable</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="notBusyLabel">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Non Occuper</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="violetLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../rcs/RRM_Rcs.qrc">:/Status/images/Status/violet.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../rcs/RRM_Rcs.qrc">:/Status/images/Status/orange.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="redLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../rcs/RRM_Rcs.qrc">:/Status/images/Status/red.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="greenLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../rcs/RRM_Rcs.qrc">:/Status/images/Status/green.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="completLabel">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>90</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Complet</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="halfBusyLabel">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>50</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Occuper Partiellement</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources>

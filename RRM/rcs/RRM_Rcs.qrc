@@ -25,4 +25,12 @@
     <qresource prefix="/Floors">
         <file>images/floors/floor.png</file>
     </qresource>
+    <qresource prefix="/Status">
+        <file>images/Status/green.png</file>
+        <file>images/Status/orange.png</file>
+        <file>images/Status/red.png</file>
+        <file>images/Status/violet.png</file>
+        <file>images/cross.png</file>
+        <file>images/see.png</file>
+    </qresource>
 </RCC>
