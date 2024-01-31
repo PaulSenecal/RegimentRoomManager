@@ -17,6 +17,17 @@ public:
     void moveFloorVariable();
     void moveFloorImage();
 
+private slots:
+    void on_addPersonButton_clicked();
+
+    void on_floor4Button_clicked();
+
+    void on_floor3Button_clicked();
+
+    void on_floor2Button_clicked();
+
+    void on_floor1Button_clicked();
+
 private:
     Ui::roomManager *ui;
 };

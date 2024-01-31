@@ -10,9 +10,11 @@
 #define UI_ROOMMANAGER_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -22,17 +24,18 @@ class Ui_roomManager
 public:
     QLabel *floorVariableLabel;
     QGroupBox *floorGroupBox;
-    QLabel *floor1ImageLabel;
-    QLabel *floor2Imagelabel;
-    QLabel *floor4ImageLabel;
-    QLabel *floor3ImageLabel;
+    QPushButton *floor4Button;
+    QPushButton *floor3Button;
+    QPushButton *floor1Button;
+    QPushButton *floor2Button;
+    QLabel *youAreHereLabel;
     QLabel *nameVariableLabel;
     QGroupBox *roomDetailGroupBox;
     QLabel *roomNumberLabel;
-    QLabel *roomNumberLabel_2;
-    QLabel *roomNumberLabel_3;
-    QLabel *roomNumberLabel_4;
-    QLabel *label;
+    QPushButton *seeHistoricalButton;
+    QPushButton *addProblemButton;
+    QPushButton *addPersonButton;
+    QLabel *displayPersonLabel;
     QGroupBox *problemDetailGroupBox;
     QGroupBox *statusGroupBox;
     QLabel *problemLabel;
@@ -53,7 +56,7 @@ public:
 "color:black;"));
         floorVariableLabel = new QLabel(roomManager);
         floorVariableLabel->setObjectName("floorVariableLabel");
-        floorVariableLabel->setGeometry(QRect(50, 160, 121, 71));
+        floorVariableLabel->setGeometry(QRect(30, 190, 141, 71));
         QFont font;
         font.setPointSize(12);
         font.setBold(true);
@@ -63,25 +66,50 @@ public:
         floorGroupBox->setObjectName("floorGroupBox");
         floorGroupBox->setGeometry(QRect(190, 110, 371, 531));
         floorGroupBox->setStyleSheet(QString::fromUtf8("background: transparent;"));
-        floor1ImageLabel = new QLabel(floorGroupBox);
-        floor1ImageLabel->setObjectName("floor1ImageLabel");
-        floor1ImageLabel->setGeometry(QRect(50, 370, 241, 121));
-        floor1ImageLabel->setPixmap(QPixmap(QString::fromUtf8(":/Floors/images/floors/floor.png")));
-        floor2Imagelabel = new QLabel(floorGroupBox);
-        floor2Imagelabel->setObjectName("floor2Imagelabel");
-        floor2Imagelabel->setGeometry(QRect(50, 320, 241, 121));
-        floor2Imagelabel->setPixmap(QPixmap(QString::fromUtf8(":/Floors/images/floors/floor.png")));
-        floor4ImageLabel = new QLabel(floorGroupBox);
-        floor4ImageLabel->setObjectName("floor4ImageLabel");
-        floor4ImageLabel->setGeometry(QRect(50, 40, 241, 121));
-        floor4ImageLabel->setPixmap(QPixmap(QString::fromUtf8(":/Floors/images/floors/floor.png")));
-        floor3ImageLabel = new QLabel(floorGroupBox);
-        floor3ImageLabel->setObjectName("floor3ImageLabel");
-        floor3ImageLabel->setGeometry(QRect(50, 220, 241, 121));
-        floor3ImageLabel->setPixmap(QPixmap(QString::fromUtf8(":/Floors/images/floors/floor.png")));
+        floor4Button = new QPushButton(floorGroupBox);
+        floor4Button->setObjectName("floor4Button");
+        floor4Button->setGeometry(QRect(40, 50, 251, 141));
+        floor4Button->setStyleSheet(QString::fromUtf8("border-style: outset;\\n\n"
+"background: transparent;"));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/Floors/images/floors/floor.png"), QSize(), QIcon::Normal, QIcon::Off);
+        floor4Button->setIcon(icon);
+        floor4Button->setIconSize(QSize(260, 140));
+        floor3Button = new QPushButton(floorGroupBox);
+        floor3Button->setObjectName("floor3Button");
+        floor3Button->setGeometry(QRect(40, 150, 251, 141));
+        floor3Button->setStyleSheet(QString::fromUtf8("border-style: outset;\\n\n"
+"background: transparent;"));
+        floor3Button->setIcon(icon);
+        floor3Button->setIconSize(QSize(260, 140));
+        floor1Button = new QPushButton(floorGroupBox);
+        floor1Button->setObjectName("floor1Button");
+        floor1Button->setGeometry(QRect(40, 350, 251, 141));
+        floor1Button->setStyleSheet(QString::fromUtf8("border-style: outset;\\n\n"
+"background: transparent;"));
+        floor1Button->setIcon(icon);
+        floor1Button->setIconSize(QSize(260, 140));
+        floor2Button = new QPushButton(floorGroupBox);
+        floor2Button->setObjectName("floor2Button");
+        floor2Button->setGeometry(QRect(40, 250, 251, 141));
+        floor2Button->setStyleSheet(QString::fromUtf8("border-style: outset;\\n\n"
+"background: transparent;"));
+        floor2Button->setIcon(icon);
+        floor2Button->setIconSize(QSize(260, 140));
+        youAreHereLabel = new QLabel(floorGroupBox);
+        youAreHereLabel->setObjectName("youAreHereLabel");
+        youAreHereLabel->setGeometry(QRect(290, 80, 71, 81));
+        youAreHereLabel->setStyleSheet(QString::fromUtf8("background: transparent;"));
+        youAreHereLabel->setPixmap(QPixmap(QString::fromUtf8(":/Status/images/youAreHere.png")));
+        youAreHereLabel->setScaledContents(true);
+        floor1Button->raise();
+        floor2Button->raise();
+        floor3Button->raise();
+        floor4Button->raise();
+        youAreHereLabel->raise();
         nameVariableLabel = new QLabel(roomManager);
         nameVariableLabel->setObjectName("nameVariableLabel");
-        nameVariableLabel->setGeometry(QRect(750, 10, 311, 71));
+        nameVariableLabel->setGeometry(QRect(750, 10, 401, 71));
         QFont font1;
         font1.setPointSize(20);
         font1.setBold(true);
@@ -98,39 +126,49 @@ public:
         roomNumberLabel = new QLabel(roomDetailGroupBox);
         roomNumberLabel->setObjectName("roomNumberLabel");
         roomNumberLabel->setGeometry(QRect(100, 40, 91, 31));
-        QFont font2;
-        font2.setPointSize(12);
-        roomNumberLabel->setFont(font2);
+        roomNumberLabel->setFont(font);
         roomNumberLabel->setStyleSheet(QString::fromUtf8("background: transparent;\n"
 "border: transparent;"));
-        roomNumberLabel_2 = new QLabel(roomDetailGroupBox);
-        roomNumberLabel_2->setObjectName("roomNumberLabel_2");
-        roomNumberLabel_2->setGeometry(QRect(30, 70, 241, 61));
-        roomNumberLabel_2->setStyleSheet(QString::fromUtf8("border-style: outset;\n"
+        seeHistoricalButton = new QPushButton(roomDetailGroupBox);
+        seeHistoricalButton->setObjectName("seeHistoricalButton");
+        seeHistoricalButton->setGeometry(QRect(40, 170, 211, 61));
+        QFont font2;
+        font2.setBold(true);
+        seeHistoricalButton->setFont(font2);
+        seeHistoricalButton->setStyleSheet(QString::fromUtf8("border-style: outset;\n"
 "background: transparent;\n"
 "border-width: 2px;\n"
 "border-radius: 20px;\n"
 "border-color: black;"));
-        roomNumberLabel_3 = new QLabel(roomDetailGroupBox);
-        roomNumberLabel_3->setObjectName("roomNumberLabel_3");
-        roomNumberLabel_3->setGeometry(QRect(30, 160, 231, 41));
-        roomNumberLabel_3->setStyleSheet(QString::fromUtf8("border-style: outset;\n"
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8(":/Status/images/see.png"), QSize(), QIcon::Normal, QIcon::Off);
+        seeHistoricalButton->setIcon(icon1);
+        addProblemButton = new QPushButton(roomDetailGroupBox);
+        addProblemButton->setObjectName("addProblemButton");
+        addProblemButton->setGeometry(QRect(40, 260, 211, 61));
+        addProblemButton->setFont(font2);
+        addProblemButton->setStyleSheet(QString::fromUtf8("border-style: outset;\n"
 "background: transparent;\n"
 "border-width: 2px;\n"
 "border-radius: 20px;\n"
 "border-color: black;"));
-        roomNumberLabel_4 = new QLabel(roomDetailGroupBox);
-        roomNumberLabel_4->setObjectName("roomNumberLabel_4");
-        roomNumberLabel_4->setGeometry(QRect(30, 230, 231, 41));
-        roomNumberLabel_4->setStyleSheet(QString::fromUtf8("border-style: outset;\n"
+        QIcon icon2;
+        icon2.addFile(QString::fromUtf8(":/Status/images/cross.png"), QSize(), QIcon::Normal, QIcon::Off);
+        addProblemButton->setIcon(icon2);
+        addPersonButton = new QPushButton(roomDetailGroupBox);
+        addPersonButton->setObjectName("addPersonButton");
+        addPersonButton->setGeometry(QRect(40, 80, 211, 61));
+        addPersonButton->setFont(font2);
+        addPersonButton->setStyleSheet(QString::fromUtf8("border-style: outset;\n"
 "background: transparent;\n"
 "border-width: 2px;\n"
 "border-radius: 20px;\n"
 "border-color: black;"));
-        label = new QLabel(roomDetailGroupBox);
-        label->setObjectName("label");
-        label->setGeometry(QRect(40, 82, 41, 41));
-        label->setPixmap(QPixmap(QString::fromUtf8(":/Status/images/see.png")));
+        addPersonButton->setIcon(icon2);
+        displayPersonLabel = new QLabel(roomDetailGroupBox);
+        displayPersonLabel->setObjectName("displayPersonLabel");
+        displayPersonLabel->setGeometry(QRect(30, 360, 231, 231));
+        displayPersonLabel->setFont(font2);
         problemDetailGroupBox = new QGroupBox(roomManager);
         problemDetailGroupBox->setObjectName("problemDetailGroupBox");
         problemDetailGroupBox->setGeometry(QRect(230, 700, 1131, 221));
@@ -197,17 +235,18 @@ public:
         roomManager->setWindowTitle(QCoreApplication::translate("roomManager", "Form", nullptr));
         floorVariableLabel->setText(QCoreApplication::translate("roomManager", "Floor Variable", nullptr));
         floorGroupBox->setTitle(QString());
-        floor1ImageLabel->setText(QString());
-        floor2Imagelabel->setText(QString());
-        floor4ImageLabel->setText(QString());
-        floor3ImageLabel->setText(QString());
+        floor4Button->setText(QString());
+        floor3Button->setText(QString());
+        floor1Button->setText(QString());
+        floor2Button->setText(QString());
+        youAreHereLabel->setText(QString());
         nameVariableLabel->setText(QCoreApplication::translate("roomManager", "Name Building Variable", nullptr));
         roomDetailGroupBox->setTitle(QString());
         roomNumberLabel->setText(QCoreApplication::translate("roomManager", "Chambre", nullptr));
-        roomNumberLabel_2->setText(QCoreApplication::translate("roomManager", "Historique Occupant", nullptr));
-        roomNumberLabel_3->setText(QCoreApplication::translate("roomManager", "Ajouter un Occupante", nullptr));
-        roomNumberLabel_4->setText(QCoreApplication::translate("roomManager", "Ajouter un Probleme", nullptr));
-        label->setText(QString());
+        seeHistoricalButton->setText(QCoreApplication::translate("roomManager", "Historique occupant", nullptr));
+        addProblemButton->setText(QCoreApplication::translate("roomManager", "Ajouter un probleme", nullptr));
+        addPersonButton->setText(QCoreApplication::translate("roomManager", "Ajouter un occupant", nullptr));
+        displayPersonLabel->setText(QCoreApplication::translate("roomManager", "VariableNameOccupant", nullptr));
         problemDetailGroupBox->setTitle(QString());
         statusGroupBox->setTitle(QString());
         problemLabel->setText(QCoreApplication::translate("roomManager", "Non Attribuable", nullptr));

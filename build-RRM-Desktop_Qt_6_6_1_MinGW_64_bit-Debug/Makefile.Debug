@@ -139,6 +139,7 @@ debug/qrc_RRM_Rcs.cpp: ../RRM/rcs/RRM_Rcs.qrc \
 		../RRM/rcs/images/BackLoginNoPixel.png \
 		../RRM/rcs/images/floors/floor.png \
 		../RRM/rcs/images/cross.png \
+		../RRM/rcs/images/youAreHere.png \
 		../RRM/rcs/images/see.png \
 		../RRM/rcs/images/Status/red.png \
 		../RRM/rcs/images/Status/green.png \
@@ -1900,6 +1901,7 @@ debug/roomManager.o: ../RRM/manageRoom/roomManager.cpp ../RRM/manageRoom/roomMan
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qnativeinterface.h \
 		ui_roomManager.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/QVariant \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/QIcon \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QApplication \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qapplication.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtCore/qcoreapplication.h \
@@ -1928,7 +1930,10 @@ debug/roomManager.o: ../RRM/manageRoom/roomManager.cpp ../RRM/manageRoom/roomMan
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QLabel \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qlabel.h \
 		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qpicture.h \
-		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qtextdocument.h
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/DOWNLOAD/ProgrammingSoftware/QT/6.6.1/mingw_64/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\roomManager.o ..\RRM\manageRoom\roomManager.cpp
 
 debug/qrc_RRM_Rcs.o: debug/qrc_RRM_Rcs.cpp 

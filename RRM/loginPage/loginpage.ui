@@ -208,6 +208,9 @@ color : #014200;</string>
    <property name="text">
     <string>PushButton</string>
    </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
   </widget>
  </widget>
  <resources>

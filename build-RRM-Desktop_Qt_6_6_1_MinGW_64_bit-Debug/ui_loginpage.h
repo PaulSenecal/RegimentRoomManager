@@ -123,6 +123,9 @@ public:
         passWordLineEdit->setText(QCoreApplication::translate("loginPage", "123456789", nullptr));
         authLineEdit->setText(QCoreApplication::translate("loginPage", "ecl.semaine", nullptr));
         ConnectionButton->setText(QCoreApplication::translate("loginPage", "PushButton", nullptr));
+#if QT_CONFIG(shortcut)
+        ConnectionButton->setShortcut(QCoreApplication::translate("loginPage", "Return", nullptr));
+#endif // QT_CONFIG(shortcut)
     } // retranslateUi
 
 };
