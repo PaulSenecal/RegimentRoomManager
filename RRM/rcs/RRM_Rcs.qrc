@@ -32,5 +32,6 @@
         <file>images/Status/violet.png</file>
         <file>images/cross.png</file>
         <file>images/see.png</file>
+        <file>images/youAreHere.png</file>
     </qresource>
 </RCC>

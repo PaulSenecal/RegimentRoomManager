@@ -20,9 +20,9 @@ color:black;</string>
   <widget class="QLabel" name="floorVariableLabel">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>160</y>
-     <width>121</width>
+     <x>30</x>
+     <y>190</y>
+     <width>141</width>
      <height>71</height>
     </rect>
    </property>
@@ -54,77 +54,148 @@ color:black;</string>
    <property name="title">
     <string/>
    </property>
-   <widget class="QLabel" name="floor1ImageLabel">
+   <widget class="QPushButton" name="floor4Button">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>370</y>
-      <width>241</width>
-      <height>121</height>
+      <x>40</x>
+      <y>50</y>
+      <width>251</width>
+      <height>141</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;\n
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../rcs/RRM_Rcs.qrc">
+      <normaloff>:/Floors/images/floors/floor.png</normaloff>:/Floors/images/floors/floor.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>260</width>
+      <height>140</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="floor3Button">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>150</y>
+      <width>251</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;\n
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../rcs/RRM_Rcs.qrc">
+      <normaloff>:/Floors/images/floors/floor.png</normaloff>:/Floors/images/floors/floor.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>260</width>
+      <height>140</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="floor1Button">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>350</y>
+      <width>251</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;\n
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../rcs/RRM_Rcs.qrc">
+      <normaloff>:/Floors/images/floors/floor.png</normaloff>:/Floors/images/floors/floor.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>260</width>
+      <height>140</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="floor2Button">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>250</y>
+      <width>251</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;\n
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../rcs/RRM_Rcs.qrc">
+      <normaloff>:/Floors/images/floors/floor.png</normaloff>:/Floors/images/floors/floor.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>260</width>
+      <height>140</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="youAreHereLabel">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>80</y>
+      <width>71</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;</string>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../rcs/RRM_Rcs.qrc">:/Floors/images/floors/floor.png</pixmap>
+     <pixmap resource="../rcs/RRM_Rcs.qrc">:/Status/images/youAreHere.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="floor2Imagelabel">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>320</y>
-      <width>241</width>
-      <height>121</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="../rcs/RRM_Rcs.qrc">:/Floors/images/floors/floor.png</pixmap>
-    </property>
-   </widget>
-   <widget class="QLabel" name="floor4ImageLabel">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>40</y>
-      <width>241</width>
-      <height>121</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="../rcs/RRM_Rcs.qrc">:/Floors/images/floors/floor.png</pixmap>
-    </property>
-   </widget>
-   <widget class="QLabel" name="floor3ImageLabel">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>220</y>
-      <width>241</width>
-      <height>121</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="../rcs/RRM_Rcs.qrc">:/Floors/images/floors/floor.png</pixmap>
-    </property>
-   </widget>
+   <zorder>floor1Button</zorder>
+   <zorder>floor2Button</zorder>
+   <zorder>floor3Button</zorder>
+   <zorder>floor4Button</zorder>
+   <zorder>youAreHereLabel</zorder>
   </widget>
   <widget class="QLabel" name="nameVariableLabel">
    <property name="geometry">
     <rect>
      <x>750</x>
      <y>10</y>
-     <width>311</width>
+     <width>401</width>
      <height>71</height>
     </rect>
    </property>
@@ -172,6 +243,7 @@ border-color: black;</string>
     <property name="font">
      <font>
       <pointsize>12</pointsize>
+      <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -182,80 +254,109 @@ border: transparent;</string>
      <string>Chambre</string>
     </property>
    </widget>
-   <widget class="QLabel" name="roomNumberLabel_2">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>70</y>
-      <width>241</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-style: outset;
-background: transparent;
-border-width: 2px;
-border-radius: 20px;
-border-color: black;</string>
-    </property>
-    <property name="text">
-     <string>Historique Occupant</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="roomNumberLabel_3">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>160</y>
-      <width>231</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-style: outset;
-background: transparent;
-border-width: 2px;
-border-radius: 20px;
-border-color: black;</string>
-    </property>
-    <property name="text">
-     <string>Ajouter un Occupante</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="roomNumberLabel_4">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>230</y>
-      <width>231</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-style: outset;
-background: transparent;
-border-width: 2px;
-border-radius: 20px;
-border-color: black;</string>
-    </property>
-    <property name="text">
-     <string>Ajouter un Probleme</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QPushButton" name="seeHistoricalButton">
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>82</y>
-      <width>41</width>
-      <height>41</height>
+      <y>170</y>
+      <width>211</width>
+      <height>61</height>
      </rect>
     </property>
-    <property name="text">
-     <string/>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
     </property>
-    <property name="pixmap">
-     <pixmap resource="../rcs/RRM_Rcs.qrc">:/Status/images/see.png</pixmap>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;
+background: transparent;
+border-width: 2px;
+border-radius: 20px;
+border-color: black;</string>
+    </property>
+    <property name="text">
+     <string>Historique occupant</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../rcs/RRM_Rcs.qrc">
+      <normaloff>:/Status/images/see.png</normaloff>:/Status/images/see.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addProblemButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>260</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;
+background: transparent;
+border-width: 2px;
+border-radius: 20px;
+border-color: black;</string>
+    </property>
+    <property name="text">
+     <string>Ajouter un probleme</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../rcs/RRM_Rcs.qrc">
+      <normaloff>:/Status/images/cross.png</normaloff>:/Status/images/cross.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addPersonButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>80</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;
+background: transparent;
+border-width: 2px;
+border-radius: 20px;
+border-color: black;</string>
+    </property>
+    <property name="text">
+     <string>Ajouter un occupant</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../rcs/RRM_Rcs.qrc">
+      <normaloff>:/Status/images/cross.png</normaloff>:/Status/images/cross.png</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="displayPersonLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>360</y>
+      <width>231</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>VariableNameOccupant</string>
     </property>
    </widget>
   </widget>
