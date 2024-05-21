@@ -79,7 +79,5 @@ CMakeLists.txt.user*
 
 /build-RRM-Desktop_Qt_6_6_1_MinGW_64_bit-Debug
 
-package-lock.json
-
 build-RRM-Desktop_Qt_6_6_1_MinGW_64_bit-Debug
 node_modules
