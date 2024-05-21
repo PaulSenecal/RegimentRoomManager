@@ -77,4 +77,9 @@ CMakeLists.txt.user*
 #dossier de version QT
 /build-RRM-Desktop_Qt_6_6_1_MinGW_64_bit-Debug
 
+/build-RRM-Desktop_Qt_6_6_1_MinGW_64_bit-Debug
+
+package-lock.json
+
 build-RRM-Desktop_Qt_6_6_1_MinGW_64_bit-Debug
+node_modules
