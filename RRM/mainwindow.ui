@@ -14,256 +14,1454 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QGroupBox" name="bat04GroupBox">
+   <widget class="QStackedWidget" name="roomManagerStackedWidget">
     <property name="geometry">
      <rect>
-      <x>1190</x>
-      <y>160</y>
-      <width>211</width>
-      <height>561</height>
+      <x>0</x>
+      <y>0</y>
+      <width>1911</width>
+      <height>1031</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">border-style: outset;
+    <property name="currentIndex">
+     <number>5</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QPushButton" name="pagedu2">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>10</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>page du 2</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>90</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>page du 3</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>60</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>le 1</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="statusGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>1470</x>
+        <y>810</y>
+        <width>271</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+border: transparent;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="problemLabel">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>130</y>
+         <width>201</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Non Attribuable</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="notBusyLabel">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>10</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Non Occuper</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="violetLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="rcs/RRM_Rcs.qrc">:/Status/images/Status/violet.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="rcs/RRM_Rcs.qrc">:/Status/images/Status/orange.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="redLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="rcs/RRM_Rcs.qrc">:/Status/images/Status/red.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="greenLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>31</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="rcs/RRM_Rcs.qrc">:/Status/images/Status/green.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="completLabel">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>90</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Complet</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="halfBusyLabel">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>50</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Occuper Partiellement</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="nameVariableLabel">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>90</y>
+        <width>401</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;</string>
+      </property>
+      <property name="text">
+       <string>Name Building Variable</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="floorGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>190</y>
+        <width>371</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="floor4Button">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>50</y>
+         <width>251</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-style: outset;\n
+background: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Floors/images/floors/floor.png</normaloff>:/Floors/images/floors/floor.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>260</width>
+         <height>140</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="floor3Button">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>150</y>
+         <width>251</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-style: outset;\n
+background: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Floors/images/floors/floor.png</normaloff>:/Floors/images/floors/floor.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>260</width>
+         <height>140</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="floor1Button">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>350</y>
+         <width>251</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-style: outset;\n
+background: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Floors/images/floors/floor.png</normaloff>:/Floors/images/floors/floor.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>260</width>
+         <height>140</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="floor2Button">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>250</y>
+         <width>251</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-style: outset;\n
+background: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Floors/images/floors/floor.png</normaloff>:/Floors/images/floors/floor.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>260</width>
+         <height>140</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QLabel" name="youAreHereLabel">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>80</y>
+         <width>71</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="rcs/RRM_Rcs.qrc">:/Status/images/youAreHere.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <zorder>floor1Button</zorder>
+      <zorder>floor2Button</zorder>
+      <zorder>floor3Button</zorder>
+      <zorder>floor4Button</zorder>
+      <zorder>youAreHereLabel</zorder>
+     </widget>
+     <widget class="QLabel" name="floorVariableLabel">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>270</y>
+        <width>141</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;</string>
+      </property>
+      <property name="text">
+       <string>Floor Variable</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="problemDetailGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>780</y>
+        <width>1131</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style: outset;
+background: transparent;
 border-width: 2px;
 border-radius: 28px;
 border-color: black;</string>
-    </property>
-    <property name="title">
-     <string/>
-    </property>
-    <widget class="QPushButton" name="pushButton">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>40</y>
-       <width>161</width>
-       <height>201</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: transparent;
-border: transparent;</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset resource="rcs/RRM_Rcs.qrc">
-       <normaloff>:/Images/Squadrons/images/squadron/1_RCH_1_ESC.png</normaloff>:/Images/Squadrons/images/squadron/1_RCH_1_ESC.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>134</width>
-       <height>180</height>
-      </size>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_4">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>320</y>
-       <width>191</width>
-       <height>151</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: transparent;
-border: transparent;</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset resource="rcs/RRM_Rcs.qrc">
-       <normaloff>:/Images/Squadrons/images/squadron/1_RCH_4_ESC.png</normaloff>:/Images/Squadrons/images/squadron/1_RCH_4_ESC.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>180</width>
-       <height>146</height>
-      </size>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="bat02GroupBox">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>150</y>
-      <width>221</width>
-      <height>561</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-style: outset;
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="roomDetailGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>1480</x>
+        <y>190</y>
+        <width>291</width>
+        <height>621</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style: outset;
+background: transparent;
 border-width: 2px;
 border-radius: 28px;
 border-color: black;</string>
-    </property>
-    <property name="title">
-     <string/>
-    </property>
-    <widget class="QPushButton" name="pushButton_2">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>40</y>
-       <width>201</width>
-       <height>181</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: transparent;
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="roomNumberLabel">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>40</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;
 border: transparent;</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset resource="rcs/RRM_Rcs.qrc">
-       <normaloff>:/Images/Squadrons/images/squadron/1_RCH_2_ESC.png</normaloff>:/Images/Squadrons/images/squadron/1_RCH_2_ESC.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>179</width>
-       <height>180</height>
-      </size>
-     </property>
+       </property>
+       <property name="text">
+        <string>Chambre</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="seeHistoricalButton">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>170</y>
+         <width>211</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-style: outset;
+background: transparent;
+border-width: 2px;
+border-radius: 20px;
+border-color: black;</string>
+       </property>
+       <property name="text">
+        <string>Historique occupant</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Status/images/see.png</normaloff>:/Status/images/see.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="addProblemButton">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>260</y>
+         <width>211</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-style: outset;
+background: transparent;
+border-width: 2px;
+border-radius: 20px;
+border-color: black;</string>
+       </property>
+       <property name="text">
+        <string>Ajouter un probleme</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Status/images/cross.png</normaloff>:/Status/images/cross.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="addPersonButton">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>80</y>
+         <width>211</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-style: outset;
+background: transparent;
+border-width: 2px;
+border-radius: 20px;
+border-color: black;</string>
+       </property>
+       <property name="text">
+        <string>Ajouter un occupant</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Status/images/cross.png</normaloff>:/Status/images/cross.png</iconset>
+       </property>
+      </widget>
+      <widget class="QLabel" name="displayPersonLabel">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>360</y>
+         <width>231</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>VariableNameOccupant</string>
+       </property>
+      </widget>
+     </widget>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>300</y>
-       <width>181</width>
-       <height>181</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: transparent;
-border: transparent;</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset resource="rcs/RRM_Rcs.qrc">
-       <normaloff>:/Images/Squadrons/images/squadron/1_RCH_3_ESC.png</normaloff>:/Images/Squadrons/images/squadron/1_RCH_3_ESC.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>180</width>
-       <height>180</height>
-      </size>
-     </property>
+    <widget class="QWidget" name="page_5">
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>60</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>le 4</string>
+      </property>
+     </widget>
     </widget>
-   </widget>
-   <widget class="QGroupBox" name="bat03GroupBox">
-    <property name="geometry">
-     <rect>
-      <x>620</x>
-      <y>800</y>
-      <width>550</width>
-      <height>221</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-style: outset;
+    <widget class="QWidget" name="page_4">
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>60</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>le 6</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_7">
+     <widget class="QGroupBox" name="bat03GroupBox">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>800</y>
+        <width>550</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style: outset;
 border-width: 2px;
 border-radius: 28px;
 border-color: black;</string>
-    </property>
-    <property name="title">
-     <string/>
-    </property>
-    <widget class="QPushButton" name="pushButton_6">
-     <property name="geometry">
-      <rect>
-       <x>300</x>
-       <y>10</y>
-       <width>181</width>
-       <height>191</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: transparent;
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="sixthSquadronButton">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>10</y>
+         <width>181</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;
 border: transparent;</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset resource="rcs/RRM_Rcs.qrc">
-       <normaloff>:/Images/Squadrons/images/squadron/6esc.png</normaloff>:/Images/Squadrons/images/squadron/6esc.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>180</width>
-       <height>180</height>
-      </size>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_5">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>10</y>
-       <width>161</width>
-       <height>191</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: transparent;
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Images/Squadrons/images/squadron/6esc.png</normaloff>:/Images/Squadrons/images/squadron/6esc.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>180</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="seventhSquadronButton">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>10</y>
+         <width>161</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;
 border: transparent;</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset resource="rcs/RRM_Rcs.qrc">
-       <normaloff>:/Images/Squadrons/images/squadron/1_RCH_ECL.png</normaloff>:/Images/Squadrons/images/squadron/1_RCH_ECL.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>115</width>
-       <height>180</height>
-      </size>
-     </property>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Images/Squadrons/images/squadron/1_RCH_ECL.png</normaloff>:/Images/Squadrons/images/squadron/1_RCH_ECL.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>115</width>
+         <height>180</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="bat04GroupBox">
+      <property name="geometry">
+       <rect>
+        <x>1160</x>
+        <y>160</y>
+        <width>211</width>
+        <height>561</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 28px;
+border-color: black;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="firstSquadronButton">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>161</width>
+         <height>201</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;
+border: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Images/Squadrons/images/squadron/1_RCH_1_ESC.png</normaloff>:/Images/Squadrons/images/squadron/1_RCH_1_ESC.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>134</width>
+         <height>180</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="fourthSquadronButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>320</y>
+         <width>191</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;
+border: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Images/Squadrons/images/squadron/1_RCH_4_ESC.png</normaloff>:/Images/Squadrons/images/squadron/1_RCH_4_ESC.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>146</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="welcomeLabel">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>90</y>
+        <width>221</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Bienvenu</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="bat02GroupBox">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>150</y>
+        <width>221</width>
+        <height>561</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 28px;
+border-color: black;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="secondSquadronButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>201</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;
+border: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Images/Squadrons/images/squadron/1_RCH_2_ESC.png</normaloff>:/Images/Squadrons/images/squadron/1_RCH_2_ESC.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>179</width>
+         <height>180</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="thirdSquadronButton">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>300</y>
+         <width>181</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;
+border: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Images/Squadrons/images/squadron/1_RCH_3_ESC.png</normaloff>:/Images/Squadrons/images/squadron/1_RCH_3_ESC.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>180</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="mainTitleLabel">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>30</y>
+        <width>421</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>SELECTIONNEZ  UN ESCADRON</string>
+      </property>
+     </widget>
     </widget>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>720</x>
-      <y>30</y>
-      <width>421</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>20</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>SELECTIONNEZ  UN ESCADRON</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>760</x>
-      <y>200</y>
-      <width>251</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
+    <widget class="QWidget" name="page_3">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>10</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ecl</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>10</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="statusGroupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>1450</x>
+        <y>780</y>
+        <width>271</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+border: transparent;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="problemLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>130</y>
+         <width>201</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Non Attribuable</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="notBusyLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>10</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Non Occuper</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="violetLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="rcs/RRM_Rcs.qrc">:/Status/images/Status/violet.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="rcs/RRM_Rcs.qrc">:/Status/images/Status/orange.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="redLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="rcs/RRM_Rcs.qrc">:/Status/images/Status/red.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="greenLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>31</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="rcs/RRM_Rcs.qrc">:/Status/images/Status/green.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="completLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>90</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Complet</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="halfBusyLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>50</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Occuper Partiellement</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="nameVariableLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>60</y>
+        <width>401</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;</string>
+      </property>
+      <property name="text">
+       <string>Name Building Variable</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="floorGroupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>160</y>
+        <width>371</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="floor4Button_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>50</y>
+         <width>251</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-style: outset;\n
+background: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Floors/images/floors/floor.png</normaloff>:/Floors/images/floors/floor.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>260</width>
+         <height>140</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="floor3Button_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>150</y>
+         <width>251</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-style: outset;\n
+background: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Floors/images/floors/floor.png</normaloff>:/Floors/images/floors/floor.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>260</width>
+         <height>140</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="floor1Button_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>350</y>
+         <width>251</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-style: outset;\n
+background: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Floors/images/floors/floor.png</normaloff>:/Floors/images/floors/floor.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>260</width>
+         <height>140</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="floor2Button_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>250</y>
+         <width>251</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-style: outset;\n
+background: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Floors/images/floors/floor.png</normaloff>:/Floors/images/floors/floor.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>260</width>
+         <height>140</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QLabel" name="youAreHereLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>80</y>
+         <width>71</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="rcs/RRM_Rcs.qrc">:/Status/images/youAreHere.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="floorVariableLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>240</y>
+        <width>141</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;</string>
+      </property>
+      <property name="text">
+       <string>Floor Variable</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="problemDetailGroupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>750</y>
+        <width>1131</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style: outset;
+background: transparent;
+border-width: 2px;
+border-radius: 28px;
+border-color: black;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="roomDetailGroupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>1460</x>
+        <y>160</y>
+        <width>291</width>
+        <height>621</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style: outset;
+background: transparent;
+border-width: 2px;
+border-radius: 28px;
+border-color: black;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="roomNumberLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>40</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;
+border: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Chambre</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="seeHistoricalButton_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>170</y>
+         <width>211</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-style: outset;
+background: transparent;
+border-width: 2px;
+border-radius: 20px;
+border-color: black;</string>
+       </property>
+       <property name="text">
+        <string>Historique occupant</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Status/images/see.png</normaloff>:/Status/images/see.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="addProblemButton_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>260</y>
+         <width>211</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-style: outset;
+background: transparent;
+border-width: 2px;
+border-radius: 20px;
+border-color: black;</string>
+       </property>
+       <property name="text">
+        <string>Ajouter un probleme</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Status/images/cross.png</normaloff>:/Status/images/cross.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="addPersonButton_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>80</y>
+         <width>211</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-style: outset;
+background: transparent;
+border-width: 2px;
+border-radius: 20px;
+border-color: black;</string>
+       </property>
+       <property name="text">
+        <string>Ajouter un occupant</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rcs/RRM_Rcs.qrc">
+         <normaloff>:/Status/images/cross.png</normaloff>:/Status/images/cross.png</iconset>
+       </property>
+      </widget>
+      <widget class="QLabel" name="displayPersonLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>360</y>
+         <width>231</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>VariableNameOccupant</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

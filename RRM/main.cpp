@@ -5,7 +5,8 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    roomManager w;
-    w.show();
+    loginPage w;
+    //roomManager w;
+    w.showMaximized();
     return a.exec();
 }
