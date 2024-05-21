@@ -15,19 +15,28 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
+    MainWindow(QWidget *parent ,QString selectedSquadron);
     ~MainWindow();
 
 private slots:
-    void on_pushButton_2_clicked();
-    void on_pushButton_3_clicked();
+    void on_secondSquadronButton_clicked();
+
+    void on_thirdSquadronButton_clicked();
+
+    void on_firstSquadronButton_clicked();
+
+    void on_fourthSquadronButton_clicked();
+
+    void on_sixthSquadronButton_clicked();
+
+    void on_seventhSquadronButton_clicked();
+
     void on_pushButton_clicked();
-    void on_pushButton_4_clicked();
-    void on_pushButton_5_clicked();
-    void on_pushButton_6_clicked();
 
 private:
     Ui::MainWindow *ui;
     roomManager * _roomManager;
+    QString selectedSquadron;
 };
 
 

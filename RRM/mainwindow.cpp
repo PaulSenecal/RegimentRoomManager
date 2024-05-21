@@ -6,9 +6,16 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    //ui->label_2->setText(squadronSelection);
 }
 
+MainWindow::MainWindow(QWidget *parent, QString selectedSquadron)
+    : QMainWindow(parent)
+    , ui(new Ui::MainWindow)
+    , selectedSquadron(selectedSquadron) // Utilisation correcte du paramètre passé
+{
+    ui->setupUi(this);
+    ui->welcomeLabel->setText("Bienvenu " + selectedSquadron);
+}
 
 
 MainWindow::~MainWindow()
@@ -21,7 +28,7 @@ MainWindow::~MainWindow()
 {
     this->squadron = squadron;
 }*/
-
+/*
 void MainWindow::on_pushButton_2_clicked()//ajouter arg pour ouvrir une fenetre custom
 {
     _roomManager = new roomManager;
@@ -31,33 +38,49 @@ void MainWindow::on_pushButton_2_clicked()//ajouter arg pour ouvrir une fenetre 
     _roomManager->setWindowTitle("pseudo");
 }
 
+*/
 
-void MainWindow::on_pushButton_3_clicked()
+
+void MainWindow::on_secondSquadronButton_clicked()
 {
+    ui->roomManagerStackedWidget->setCurrentIndex(0);
+}
 
+
+void MainWindow::on_thirdSquadronButton_clicked()
+{
+    ui->roomManagerStackedWidget->setCurrentIndex(1);
+}
+
+
+void MainWindow::on_firstSquadronButton_clicked()
+{
+    ui->roomManagerStackedWidget->setCurrentIndex(2);
+}
+
+
+void MainWindow::on_fourthSquadronButton_clicked()
+{
+    ui->roomManagerStackedWidget->setCurrentIndex(3);
+}
+
+
+void MainWindow::on_sixthSquadronButton_clicked()
+{
+    ui->roomManagerStackedWidget->setCurrentIndex(4);
+}
+
+
+void MainWindow::on_seventhSquadronButton_clicked()
+{
+    ui->roomManagerStackedWidget->setCurrentIndex(6);
 }
 
 
 void MainWindow::on_pushButton_clicked()
 {
-
+    ui->roomManagerStackedWidget->setCurrentIndex(5);
 }
 
 
-void MainWindow::on_pushButton_4_clicked()
-{
-
-}
-
-
-void MainWindow::on_pushButton_5_clicked()
-{
-
-}
-
-
-void MainWindow::on_pushButton_6_clicked()
-{
-
-}
 

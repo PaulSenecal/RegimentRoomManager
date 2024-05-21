@@ -47,8 +47,8 @@ void loginPage::requestLogin(QSqlDatabase a)
 
             if(savedPassword == password){
                 this->squadronChoice=pseudo;
-                SelectionMainWindows = new MainWindow;
-                SelectionMainWindows->show();
+                SelectionMainWindows = new MainWindow(nullptr,pseudo);
+                SelectionMainWindows->showMaximized();
                 this->close();
                 SelectionMainWindows->setWindowTitle(pseudo);
                 this->~loginPage();
