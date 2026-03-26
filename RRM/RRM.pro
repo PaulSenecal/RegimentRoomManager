@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 QT += sql
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,12 +13,14 @@ SOURCES += \
     loginPage/loginpage.cpp \
     main.cpp \
     mainwindow.cpp \
+    manageRoom/DatabaseManager.cpp \
     manageRoom/roomManager.cpp
 
 HEADERS += \
     loadingPage/loadingpage.h \
     loginPage/loginpage.h \
     mainwindow.h \
+    manageRoom/DatabaseManager.h \
     manageRoom/roomManager.h
 
 FORMS += \

@@ -2,6 +2,8 @@
 #define ROOMMANAGER_H
 
 #include <QWidget>
+#include <QMap>
+#include "DatabaseManager.h"
 
 namespace Ui {
 class roomManager;
@@ -16,20 +18,27 @@ public:
     ~roomManager();
     void moveFloorVariable();
     void moveFloorImage();
+    void updateRoomDisplay(int floor);
 
 private slots:
-    void on_addPersonButton_clicked();
-
     void on_floor4Button_clicked();
-
     void on_floor3Button_clicked();
-
     void on_floor2Button_clicked();
-
     void on_floor1Button_clicked();
+    void onRoomClicked();
 
 private:
     Ui::roomManager *ui;
+    DatabaseManager* db;
+    int currentFloor;
+    QMap<int, QWidget*> roomWidgets;
+
+    void setupRooms();
+    void createRoomWidget(int floor, int roomNumber, int capacity);
+    void updateRoomStatus(int roomId);
+    void showAddPersonDialog(int roomId);
+    void showAddProblemDialog(int roomId);
+    void showRoomHistory(int roomId);
 };
 
 #endif // ROOMMANAGER_H
